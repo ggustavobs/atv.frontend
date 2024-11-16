@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Pokémon - <%= name %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title"><%= name %> (#<%= id %>)</h1>
+    <img src="<%= sprite %>" alt="<%= name %>" width="150" height="150">
+    <div class="pokemon-details">
+      <p><strong>Altura:</strong> <%= height %> decímetros</p>
+      <p><strong>Peso:</strong> <%= weight %> hectogramas</p>
+      <p><strong>Tipos:</strong> <%= types.join(', ') %></p>
+    </div>
+    <a href="/" class="button">Voltar à Busca</a>
+  </div>
+</body>
+</html>
